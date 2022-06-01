@@ -1,0 +1,31 @@
+@startuml Lotacao de veículo
+
+title Locação de veículo
+
+class Cliente{
+    - nome: string
+    - cpf: int
+    - dataNascimento: String
+    - CNH: String
+    + constructor(nome, cpf, dataNascimento, CNH)
+}
+
+class Veiculo{
+    - modelo: string
+    - ano: Int
+    - cor: string
+    - disponivel: bool
+    + constructor(modelo, ano, cor, disponivel)
+}
+
+class Pagamento{
+    - modoPagamento: String
+    - preco: float
+    - valorAdicional: String
+    - parcelado: String
+    + constructor(modoPagamento, preco, valorAdicional, parcelado)
+}
+
+
+
+@enduml
