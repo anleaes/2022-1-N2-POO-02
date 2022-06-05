@@ -1,8 +1,8 @@
 class Pagamento:
-    def __init__(self, modoPagamento,preco,ValorAdicional,parcelado):
+    def __init__(self, modoPagamento,preco,valorAdicional,parcelado):
         self._modoPagamento = modoPagamento
         self._preco = preco
-        self._ValorAdicional = ValorAdicional
+        self._valorAdicional = valorAdicional
         self._parcelado = parcelado
 
     def parcelamento(self):
