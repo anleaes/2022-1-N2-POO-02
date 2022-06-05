@@ -12,4 +12,4 @@ class Pagamento:
         if vezes > 1:
             print("Numero de vezes do parcelamento eh: " , + vezes)
         else:
-            print("Compra a vista")
+            print("Pagamento a vista")
