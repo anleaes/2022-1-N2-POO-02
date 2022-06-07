@@ -15,7 +15,8 @@ class Veiculo{
     - ano: Int
     - cor: string
     - disponivel: bool
-    + constructor(modelo, ano, cor, disponivel)
+    - preco_aluguel
+    + constructor(modelo, ano, cor, disponivel, preco_aluguel)
 }
 
 class Pagamento{
@@ -36,13 +37,34 @@ class Locadora{
 }
 
 class Funcionario{
-    - cliente: Cliente
+    - nome: String
     - matricula: int
     - cargo: String
     - salario: float
-    + constructor(Cliente, matricula, cargo, salario)
+    + constructor(nome, matricula, cargo, salario)
 
 }
+
+class Vendedor{
+    - funcionario: Funcionario
+    - comissao: float
+    + constructor(Funcionario, comissao)
+}
+
+class Seguro{
+    - veiculo: Veiculo
+    - valor: float
+    - tempo: Int
+    + constructor(Veiculo, valor, tempo)
+}
+
+Cliente --> Veiculo
+Funcionario <|-- Vendedor
+Veiculo <|-- Seguro
+Veiculo --> Locadora
+Pagamento <-- Cliente
+Funcionario <-- Locadora
+Vendedor --> Pagamento
 
 
 
