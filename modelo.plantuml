@@ -26,6 +26,24 @@ class Pagamento{
     + constructor(modoPagamento, preco, valorAdicional, parcelado)
 }
 
+class Locadora{
+    - cnpj: String
+    - endereco: String
+    - qtd_veiculos: int
+    - telefone: String
+    - funcionario: Funcionario
+    + constructor(cnpj, endereco, qtd_veiculos, telefone, Funcionario )
+}
+
+class Funcionario{
+    - cliente: Cliente
+    - matricula: int
+    - cargo: String
+    - salario: float
+    + constructor(Cliente, matricula, cargo, salario)
+
+}
+
 
 
 @enduml
