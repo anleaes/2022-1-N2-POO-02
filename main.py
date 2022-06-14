@@ -9,11 +9,18 @@ from pagamento import *
 
 
 
-cliente1.dados()
-veiculo2.especificacoes()
-veiculo2.disponivel()
-gerente1.comissao()
-vendedor1.comissao()
+# cliente1.dados()
+# veiculo2.especificacoes()
+# veiculo2.disponivel()
+# gerente1.comissao()
+# vendedor1.comissao()
+# pagamento1.modoPagamento()
+# pagamento2.modoPagamento()
+# pagamento1.tipo_transacao()
+# pagamento2.tipo_transacao()
+
+vendedor1.dados()
+seguro1.valor()
 
 # parcelamento = Pagamento()
 # parcelamento.parcelamento()
