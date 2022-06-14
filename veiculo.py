@@ -3,14 +3,13 @@ from pickle import TRUE
 
 
 class Veiculo:
-    def __init__(self,marca,modelo,ano,cor,disponivel,aluguel):
+    def __init__(self,marca,modelo,ano,cor,disponivel):
         self._marca = marca
         self._modelo = modelo
         self._ano = ano
         self._cor = cor
         self._disponivel = disponivel
-        self._aluguel = aluguel
-
+        
     #Especificações separadas caso queira chamar apenas uma
     def marca(self):
         print("Marca desejada:", self._marca)
@@ -20,16 +19,14 @@ class Veiculo:
         print("Ano:", self._ano)
     def cor(self):
         print('Cor escolhida:', self._cor)
-    def aluguel(self):
-        print("Preco do aluguel:", self._aluguel)
-    
+
     #Especificações juntas para chamar com apenas uma linha de comando
     def especificacoes(self):
         print("\nMarca desejada:", self._marca)
         print("Modelo desejado:", self._modelo)
         print("Ano:", self._ano)
         print('Cor escolhida:', self._cor)
-        print("Preco do aluguel:", self._aluguel)
+    
 
     
     def disponivel(self):
@@ -38,5 +35,5 @@ class Veiculo:
         else:
             print("Carro indisponivel")
 
-veiculo1 = Veiculo('Toyota', 'Etios', 2016,'Vermelho', NULL, 0)
-veiculo2 = Veiculo('Audi', 'A3', 2020, 'prata', TRUE, '200 reais por dia')
+veiculo1 = Veiculo('Toyota', 'Etios', 2016,'Vermelho', NULL)
+veiculo2 = Veiculo('Audi', 'A3', 2020, 'prata', TRUE)

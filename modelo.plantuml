@@ -15,16 +15,17 @@ class Veiculo{
     - ano: Int
     - cor: string
     - disponivel: bool
-    - preco_aluguel
-    + constructor(modelo, ano, cor, disponivel, preco_aluguel)
+    + constructor(modelo, ano, cor, disponivel)
 }
 
 class Pagamento{
     - modoPagamento: String
+    - tipoTransacao: string
+    - aluguel: float
     - preco: float
     - valorAdicional: String
     - parcelado: String
-    + constructor(modoPagamento, preco, valorAdicional, parcelado)
+    + constructor(modoPagamento, tipoTransacao, aluguel, preco, valorAdicional, parcelado)
 }
 
 class Locadora{
@@ -32,8 +33,7 @@ class Locadora{
     - endereco: String
     - qtd_veiculos: int
     - telefone: String
-    - funcionario: Funcionario
-    + constructor(cnpj, endereco, qtd_veiculos, telefone, Funcionario )
+    + constructor(cnpj, endereco, qtd_veiculos, telefone)
 }
 
 class Funcionario{
@@ -60,7 +60,7 @@ class Seguro{
 
 class Gerente{
     - funcionario: Funcionario
-    - comissao
+    - comissao: float
     + constructor(Funcionario, comissao)
 }
 
