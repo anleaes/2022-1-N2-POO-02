@@ -1,12 +1,19 @@
-from cliente import Cliente
-from vendedor import Vendedor
-from seguro import Seguro
-from locadora import Locadora
-from pagamento import Pagamento
+from cliente import *
+from veiculo import *
+from funcionario import *
+from gerente import *
+from vendedor import *
+from seguro import *
+from locadora import *
+from pagamento import *
 
 
-cliente1.ver_nome()
 
+cliente1.dados()
+veiculo2.especificacoes()
+veiculo2.disponivel()
+gerente1.comissao()
+vendedor1.comissao()
 
 # parcelamento = Pagamento()
 # parcelamento.parcelamento()
