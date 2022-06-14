@@ -1,6 +1,6 @@
-from funcionario import Funcionario 
+from funcionario import Funcionario
 
-class Vendedor(Funcionario):
+class Gerente(Funcionario):
     def __init__(self, nome, matricula, cargo, salario, comissao):
         super().__init__(nome, matricula, cargo, salario)
         self._comissao = comissao
@@ -16,4 +16,4 @@ class Vendedor(Funcionario):
     def comissao(self):
         print('Porcentagem da Comissao:',self._comissao)
 
-vendedor1 = Vendedor('Joao', 99995612,'Vendedor', 1300.00, 10)
+gerente1 = Gerente('Antonio',8999454,'Gerente',5000.45,20)

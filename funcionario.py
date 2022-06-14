@@ -3,4 +3,4 @@ class Funcionario:
         self._nome = nome
         self._matricula = matricula
         self._cargo = cargo
-        self._salario = salario
+        self._salario = salario   

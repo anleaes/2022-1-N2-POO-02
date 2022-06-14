@@ -58,6 +58,12 @@ class Seguro{
     + constructor(Veiculo, valor, tempo)
 }
 
+class Gerente{
+    - funcionario: Funcionario
+    - comissao
+    + constructor(Funcionario, comissao)
+}
+
 Cliente --> Veiculo
 Funcionario <|-- Vendedor
 Veiculo <|-- Seguro
@@ -65,6 +71,8 @@ Veiculo --> Locadora
 Pagamento <-- Cliente
 Funcionario <-- Locadora
 Vendedor --> Pagamento
+Funcionario <|-- Gerente
+Gerente --> Pagamento
 
 
 
