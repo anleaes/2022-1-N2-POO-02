@@ -27,7 +27,7 @@ class Pagamento:
 
     def parcelamento(self):
         print("Voce pode parcelar em ate 20 vezes")
-        vezes = input()
+        vezes = int(input())
         
         if vezes > 1:
             print("Numero de vezes do parcelamento eh: " , + vezes)

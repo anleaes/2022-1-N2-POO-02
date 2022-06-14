@@ -22,7 +22,7 @@ class Veiculo:
 
     #Especificações juntas para chamar com apenas uma linha de comando
     def especificacoes(self):
-        print("\nMarca desejada:", self._marca)
+        print("Marca desejada:", self._marca)
         print("Modelo desejado:", self._modelo)
         print("Ano:", self._ano)
         print('Cor escolhida:', self._cor)
@@ -35,5 +35,5 @@ class Veiculo:
         else:
             print("Carro indisponivel")
 
-veiculo1 = Veiculo('Toyota', 'Etios', 2016,'Vermelho', NULL)
-veiculo2 = Veiculo('Audi', 'A3', 2020, 'prata', TRUE)
+veiculo1 = Veiculo('Toyota', 'Etios', 2016,'Vermelho', TRUE)
+veiculo2 = Veiculo('Audi', 'A3', 2020, 'prata', NULL)

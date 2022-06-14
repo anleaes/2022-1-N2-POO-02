@@ -11,6 +11,10 @@ class Seguro(Veiculo):
         print("Valor total do seguro:", self._valor)
     def tempo(self):
         print("Tempo de duracao do seguro:", self._tempo)
+    
+    def contrato(self):
+        print("Valor total do seguro:", self._valor)
+        print("Tempo de duracao do seguro:", self._tempo)
 
 
 seguro1 = Seguro(veiculo1,1000, '1 mes')
